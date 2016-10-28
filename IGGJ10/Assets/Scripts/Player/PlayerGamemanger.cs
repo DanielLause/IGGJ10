@@ -3,10 +3,14 @@ using System.Collections;
 
 public class PlayerGamemanger : MonoBehaviour
 {
-    private PlayerMovementController playerMovementController;
+    [HideInInspector]
+    public PlayerMovementController PlayerMovementController;
+    [HideInInspector]
+    public PlayerCameraController PlayerCameraController;
 
     void Awake()
     {
-        playerMovementController = GetComponent<PlayerMovementController>();
+        PlayerMovementController = GetComponent<PlayerMovementController>();
+        PlayerCameraController = GetComponent<PlayerCameraController>();
     }
 }
