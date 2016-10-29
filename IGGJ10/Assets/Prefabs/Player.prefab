@@ -27,6 +27,7 @@ GameObject:
   - 114: {fileID: 114000012324388318}
   - 114: {fileID: 114000013560711316}
   - 114: {fileID: 114000011653713436}
+  - 114: {fileID: 114000011877706504}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -253,6 +254,23 @@ MonoBehaviour:
   maximumX: 340
   minimumY: -60
   maximumY: 60
+  CrosshairTex: {fileID: 2800000, guid: 17a1b841a390575409745106c6b67bec, type: 3}
+  CrosshairScale: 0.1
+  BobbingSpeed: 0.1
+  BobbingAmount: 0.03
+  BobbingMidpoint: 0.8
+--- !u!114 &114000011877706504
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010862738054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46c4b4b038687394180400dbb3c117d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxDistance: 20
 --- !u!114 &114000012324388318
 MonoBehaviour:
   m_ObjectHideFlags: 1
