@@ -1,12 +1,13 @@
 
 # Unity generated and a few customs #
 # ================================= #
-Temp/*
-Library/*
-Build/*
-Obj/*
-WebBuild/*
-WindowsBuild/*
+IGGJ10/Temp/*
+IGGJ10/Library/*
+IGGJ10/Build/*
+IGGJ10/Obj/*
+IGGJ10/WebBuild/*
+IGGJ10/WindowsBuild/*
+IGGJ10/Assets/Temp/*
 
 # ===================================== #
 # Visual Studio / MonoDevelop generated #

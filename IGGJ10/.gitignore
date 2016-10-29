@@ -7,6 +7,7 @@ Build/*
 Obj/*
 WebBuild/*
 WindowsBuild/*
+Assets/Temp/*
 
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
