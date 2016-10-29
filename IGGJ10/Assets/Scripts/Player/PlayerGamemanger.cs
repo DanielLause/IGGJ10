@@ -7,10 +7,13 @@ public class PlayerGamemanger : MonoBehaviour
     public PlayerMovementController PlayerMovementController;
     [HideInInspector]
     public PlayerCameraController PlayerCameraController;
+    [HideInInspector]
+    public PlayerWakeUpController PlayerWakeUpController;
 
     void Awake()
     {
         PlayerMovementController = GetComponent<PlayerMovementController>();
         PlayerCameraController = GetComponent<PlayerCameraController>();
+        PlayerWakeUpController = GetComponent<PlayerWakeUpController>();
     }
 }

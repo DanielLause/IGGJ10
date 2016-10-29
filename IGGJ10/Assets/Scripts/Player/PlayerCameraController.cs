@@ -17,6 +17,13 @@ public class PlayerCameraController : MonoBehaviour
     private float rotationY = 0F;
 
     private Quaternion originalRotation;
+    private PlayerGamemanger playerGamemaner;
+
+
+    void Awake()
+    {
+        playerGamemaner = GetComponent<PlayerGamemanger>();
+    }
 
     void Start()
     {
@@ -26,6 +33,8 @@ public class PlayerCameraController : MonoBehaviour
 
     void Update()
     {
+        if (!playerGamemaner.PlayerWakeUpController.IsAwake) return;
+
         rotationX += Input.GetAxis("Mouse X") * sensitivityX;
         rotationY += Input.GetAxis("Mouse Y") * sensitivityY;
         rotationY = ClampAngle(rotationY, minimumY, maximumY);
