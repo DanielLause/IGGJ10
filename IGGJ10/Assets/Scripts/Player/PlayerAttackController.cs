@@ -5,13 +5,6 @@ public class PlayerAttackController : MonoBehaviour
 {
     public float MaxDistance = 20;
 
-    private PlayerGamemanger playerGamemanager;
-
-    void Awake()
-    {
-        playerGamemanager = GetComponent<PlayerGamemanger>();
-    }
-
     void Update()
     {
         CheckHighLights();

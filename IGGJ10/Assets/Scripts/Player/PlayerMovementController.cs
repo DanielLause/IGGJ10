@@ -27,13 +27,11 @@ public class PlayerMovementController : MonoBehaviour
     private float maxJumpVel = 2;
     private float minJumpVel = -2;
 
-    private PlayerGamemanger playerGamemanager;
     private Rigidbody rigidBody;
     private bool disableGravity = false;
 
     void Awake()
     {
-        playerGamemanager = GetComponent<PlayerGamemanger>();
         rigidBody = GetComponent<Rigidbody>();
     }
 
@@ -70,9 +68,7 @@ public class PlayerMovementController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (IsGrounded())
-            {
                 Jump();
-            }
         }
     }
 
